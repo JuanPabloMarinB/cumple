@@ -31,7 +31,7 @@ function createBalloons() {
     const balloon = document.createElement("img");
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     balloon.style.position = "absolute";
-    balloon.src = "../Images/globo.png";
+    balloon.src = "./globo.png";
     balloon.className = "balloon " + "balloon-" + randomColor + " rise";
 
     // Asignar posición inicial aleatoria en la parte inferior
