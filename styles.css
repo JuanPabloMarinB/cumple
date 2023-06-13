@@ -85,7 +85,6 @@ body {
 
 @media (max-width: 768px) {
   body{
-    border: tomato solid 1px;
     height: 100vh;
   }
   .main-button {
