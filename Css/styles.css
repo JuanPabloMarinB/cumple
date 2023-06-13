@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90dvh;
+  background-color: #242424;
+  color: whitesmoke;
+}
+.main-button {
+  position: absolute;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #ffc107;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+.balloon {
+  width: 100px;
+}
+.balloon-red {
+  filter: drop-shadow(4px 8px 10px tomato);
+}
+.balloon-orange {
+  filter: hue-rotate(20deg) drop-shadow(4px 10px 20px orange);
+}
+.balloon-pink {
+  filter: hue-rotate(330deg) drop-shadow(4px 4px 20px pink);
+}
+.balloon-cyan {
+  filter: hue-rotate(180deg) drop-shadow(4px 4px 20px cyan);
+}
+.balloon-green {
+  filter: hue-rotate(135deg) drop-shadow(4px 4px 20px rgb(70, 255, 70));
+}
+.balloon-blue {
+  filter: hue-rotate(-130deg) drop-shadow(4px 4px 20px rgb(130, 130, 251));
+}
+.balloon-purple {
+  filter: hue-rotate(-90deg) drop-shadow(4px 4px 20px rgb(217, 83, 217));
+}
+#balloon-container {
+  display: none;
+}
+
+@keyframes rise-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-89.5dvh);
+    opacity: 0;
+  }
+}
+
+.rise {
+  animation-name: rise-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+#mensaje {
+  position: absolute;
+  opacity: 0;
+  font-size: 200px;
+  text-align: center;
+  background-image: linear-gradient(to right, tomato, #ffd700);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 2s ease;
+}
+#mensajeLargo {
+  position: absolute;
+  bottom: 5%;
+  width: 80%;
+  opacity: 0;
+  font-size: 50px;
+  text-align: center;
+  transition: opacity 2s ease;
+}
