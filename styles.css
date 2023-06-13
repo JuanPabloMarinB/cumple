@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90dvh;
+  height: 90vh;
   background-color: #242424;
   color: whitesmoke;
 }
@@ -51,7 +51,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-89.5dvh);
+    transform: translateY(-89.5vh);
     opacity: 0;
   }
 }
@@ -81,4 +81,26 @@ body {
   font-size: 50px;
   text-align: center;
   transition: opacity 2s ease;
+}
+
+@media (max-width: 768px) {
+  body{
+    border: tomato solid 1px;
+    height: 100vh;
+  }
+  .main-button {
+    font-size: 38px;
+    top: 50%;
+  }
+  #mensaje {
+    font-size: 50px;
+    bottom: 50%;
+    width: 70%;
+  }
+  #mensajeLargo {
+    font-size: 35px;
+    bottom: 10%;
+    width: 70%;
+  }
+ 
 }
